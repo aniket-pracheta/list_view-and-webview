@@ -18,9 +18,24 @@ var data=[];
 // Ti.API.info(JSON.stringify(data));
 // //$.listview2.add($.sect);
 // $.index.add($.listview2);
-$.index.open();
+//$.index.open();
 //##################################################################################
-
+	function get_site(e) {
+		if (Ti.Platform.osname === 'android'){
+		var item = e.section.items[e.itemIndex].web.text;
+		}
+		else{ var item = e.source.text;}
+		Ti.API.info(JSON.stringify(e));
+		Ti.API.info(item);
+		var webview = Titanium.UI.createWebView({
+			url : item
+		});
+		var window = Titanium.UI.createWindow();
+		window.add(webview);
+		window.open({
+			modal : true 
+		});
+	}
 function make_list(jsondata) {
 	    Ti.API.info(jsondata);
 	_.each(jsondata.data, function(car) {
@@ -29,6 +44,7 @@ function make_list(jsondata) {
 {
 	label2:{text:car.model},
 	label:{text:car.manufacturer},
+	web:{text:car.wiki},
 	image:{image:"https://raw.githubusercontent.com/SenchaArchitect/CarListings/master/CarListings/data/"+car.img },
 		template: "first" 
 });

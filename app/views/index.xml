@@ -1,17 +1,18 @@
 <Alloy>
 	<Window class="container">
-		<Label color="black"> hiii</Label>
-		<Label color="black"> ok</Label>
 		<ListView id="listview2" >
 			
 				<Templates>
-					 <ItemTemplate name="first">				  
-			                <ImageView bindId="image" id="image"/>
-			                <Label bindId="label" id="label1"/>
-			                <Label bindId="label2" id="label2"/>                        
+					 <ItemTemplate name="first">	
+					 	<View >			  
+			                <ImageView bindId="image" id="image" ></ImageView>
+			                <Label bindId="label" id="label1"  />
+			                <Label bindId="label2" id="label2"/>
+			                <Label bindId="web" onClick="get_site" id="webview" />  
+			                </View>                     
                      </ItemTemplate>
                 </Templates>
-             <ListSection id="sect">
+             <ListSection id="sect" >
                 	
              </ListSection>    
 						          

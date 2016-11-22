@@ -32,7 +32,17 @@
 },
 "#listview2":{
 	top:"4%"
+},
+
+"#webview":{
+	//visible:"false",
+	color:"black",
+	width:"60%",
+	left:"45%",
+	bottom:"0",
+	font: { fontSize:10 }
 }
+
 
 
 
