@@ -1,0 +1,21 @@
+<Alloy>
+	<Window class="container">
+		<Label color="black"> hiii</Label>
+		<Label color="black"> ok</Label>
+		<ListView id="listview2" >
+			
+				<Templates>
+					 <ItemTemplate name="first">				  
+			                <ImageView bindId="image" id="image"/>
+			                <Label bindId="label" id="label1"/>
+			                <Label bindId="label2" id="label2"/>                        
+                     </ItemTemplate>
+                </Templates>
+             <ListSection id="sect">
+                	
+             </ListSection>    
+						          
+		</ListView>		
+
+	</Window>
+</Alloy>

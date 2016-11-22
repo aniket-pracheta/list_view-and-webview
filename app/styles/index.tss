@@ -1,0 +1,38 @@
+".container": {
+	backgroundColor:"white"
+},
+
+// "#title": {
+	    // left: 0, top: 4,
+    // color: "black",
+    // textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+    // font: { fontSize: 16 }
+// },
+// "#subtitle":{
+// 	
+// },
+"#image":{
+	left:"0",
+	height:"40dp",
+	width:"20%"
+},
+"#label1":{
+	left:"30%",
+	top:"0",
+	color:"blue",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: { fontSize: 16 },
+},
+"#label2":{
+	left:"30%",
+	bottom:"0",
+	color:"black",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: { fontSize: 16 },
+},
+"#listview2":{
+	top:"4%"
+}
+
+
+
